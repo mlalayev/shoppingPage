@@ -41,7 +41,7 @@ const Header: React.FC = () => {
         <a href="#">{translations.header.stores}</a>
         <button className='outlet'>{translations.header.outlet}</button>
       </div>
-
+hello dirsh pirsh dirs cirsh
       <div className="desktop-header-holder">
         <div className="headerleft">
           <a href="#">{translations.header.companies}</a>

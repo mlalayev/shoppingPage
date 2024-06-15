@@ -46,10 +46,10 @@ header {
 
 .desktop-header-holder a,
 .mobile-header-holder a {
-    position: relative;
-    text-decoration: none;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    text-decoration: none;
     color: var(--header-a-color);
     font-size: var(--12-px-font-size);
     font-family: var(--main-roboto-font);
@@ -64,8 +64,8 @@ header {
     height: 1px;
     content: '';
     position: absolute;
-    background-color: var(--header-a-color);
     transition: width var(--03-sec-transition) ease, left var(--03-sec-transition) ease;
+    background-color: var(--header-a-color);
 }
 
 .desktop-header-holder,
