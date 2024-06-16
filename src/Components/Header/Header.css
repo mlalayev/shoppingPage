@@ -11,6 +11,9 @@
     --vertical-line-color: lightgray;
     --orange-color: orange;
     --12-px-font-size: 12px;
+    --1-vw-font-size: 1vw;
+    --5-vw-width: 5vw;
+    --8-vw-width: 8vw;
     --14-px-font-size: 14px;
     --16-px-font-size: 16px;
     --03-sec-transition: 0.3s;
@@ -88,44 +91,51 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    width: var(--5-vw-width);
 }
 
 .bicycle {
-    min-width: 100px;
+    min-width: 90px;
+    width: var(--8-vw-width);
 }
 
 .verticalline {
+    margin: 0;
     width: 1px;
     height: 30px;
-    margin: 0 15px;
     border: 1px solid var(--vertical-line-color);
 }
 
 .headerright {
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .headerleft {
-    width: 20%;
+    width: 50%;
     display: flex;
     align-items: center;
+    gap: var(--1-vw-font-size);
     justify-content: space-between;
 }
 
 .language-switcher {
+    display: flex;
     position: relative;
-    display: inline-block;
+    justify-content: center;
 }
 
 .current-language {
-    width: 140px;
+    width: 10vw;
     border: none;
+    display: flex;
     cursor: pointer;
     padding: 10px 20px;
     text-align: center;
+    justify-content: center;
+    font-size: var(--1-vw-font-size);
     background-color: var(--transparent-color);
 }
 
@@ -134,7 +144,7 @@ header {
     top: 100%;
     margin: 0;
     padding: 0;
-    width: 140px;
+    width: 100%;
     z-index: 1000;
     display: none;
     list-style: none;
@@ -153,8 +163,8 @@ header {
 }
 
 .language-options button {
-    border: none;
     width: 100%;
+    border: none;
     cursor: pointer;
     text-align: left;
     padding: 10px 20px;
@@ -165,26 +175,39 @@ header {
     display: block;
 }
 
+.personalplace {
+    display: flex;
+    font-size: 1vw;
+    align-items: center;
+    font-family: var(--main-roboto-font);
+}
+
 .language-options button:hover {
     background-color: var(--lang-btn-hover-color);
 }
 
-.active{
+.active {
     display: none;
 }
 
-.flag{
+.flag {
     height: 10px;
     max-width: 18px;
     margin-right: 5px;
 }
 
-@media screen and (min-width:770px) {
+@media screen and (min-width:900px) {
     .mobile-header-holder {
         display: none;
     }
 
     .desktop-header-holder {
         display: flex;
+    }
+}
+
+@media screen and (min-width:1130px) {
+    header {
+        padding: 30px 100px;
     }
 }

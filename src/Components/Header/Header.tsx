@@ -41,7 +41,7 @@ const Header: React.FC = () => {
         <a href="#">{translations.header.stores}</a>
         <button className='outlet'>{translations.header.outlet}</button>
       </div>
-hello dirsh pirsh dirs cirsh
+
       <div className="desktop-header-holder">
         <div className="headerleft">
           <a href="#">{translations.header.companies}</a>
@@ -55,7 +55,9 @@ hello dirsh pirsh dirs cirsh
         </div>
         <div className="headerright">
           <a href="#"><img src={irsad} alt="0171logo" className='irshad logo' /></a>
+
           <div className="verticalline"></div>
+
           <div className="language-switcher">
             <button className="current-language" onClick={() => setLanguage(language)}>
               <img src={getCurrentLanguageLabel().flag} className='flag' alt={getCurrentLanguageLabel().label} />
@@ -82,8 +84,11 @@ hello dirsh pirsh dirs cirsh
               </li>
             </ul>
           </div>
+
+          <div className="verticalline"></div>
+
           <div className="personalplace">
-          <RxPerson /> <p>Şəxsi kabinet</p>
+            <RxPerson /> <p>Şəxsi kabinet</p>
           </div>
         </div>
       </div>
